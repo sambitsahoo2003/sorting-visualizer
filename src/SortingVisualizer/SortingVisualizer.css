@@ -1,0 +1,13 @@
+#array-container {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 600px;
+  }
+  
+  .array-bar {
+    display: inline-block;
+    margin: 0 1.5px;
+    position: relative;
+  }
+  
