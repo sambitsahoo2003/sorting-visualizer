@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# Algorithm Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic and interactive web application built with **React** to visualize classic Computer Science algorithms. This project provides a clear demonstration of how **Sorting Algorithms** and **Pathfinding Algorithms** work step-by-step.
 
-## Available Scripts
+## Live Demo
+[View Live Demo](#) 
 
-In the project directory, you can run:
+## Table of Contents
+- [About the Project](#about-the-project)
+- [Features](#features)
+- [Algorithms Implemented](#algorithms-implemented)
+  - [Sorting](#sorting-algorithms)
+  - [Pathfinding](#pathfinding-algorithms)
+- [Getting Started](#getting-started)
+- [Usage Guide](#usage-guide)
+- [Technologies Used](#technologies-used)
 
-### `npm start`
+## About the Project
+This tool was designed to help students and developers visualize the inner workings of algorithms. It features a clean landing page that routes users to two distinct visualization modules:
+1.  **Sorting Visualizer:** Sorts a random or user-defined array of bars.
+2.  **Pathfinding Visualizer:** Finds paths between nodes on a 2D grid.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+* **Interactive Landing Page:** Clean UI to switch between Sorting and Pathfinding modes.
+* **Real-time Animation:** Smooth visual feedback for every swap, comparison, and path step.
+* **Custom Inputs:**
+    * *Sorting:* Users can enter their own custom array values.
+    * *Pathfinding:* Users can draw walls and drag Start/End nodes.
+* **Responsive Design:** Adjusts grid and bar sizes dynamically.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Algorithms Implemented
 
-### `npm test`
+### Sorting Algorithms
+* **Bubble Sort:** A simple comparison-based algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
+* **Insertion Sort:** Builds the final sorted array one item at a time.
+* **Merge Sort:** An efficient, stable, divide-and-conquer algorithm.
+* **Quick Sort:** An efficient, divide-and-conquer algorithm that works by selecting a 'pivot' element and partitioning the array.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pathfinding Algorithms
+* **Dijkstra's Algorithm:** The father of pathfinding algorithms; guarantees the shortest path.
+* **Breadth-First Search (BFS):** Explores all neighbor nodes at the present depth prior to moving on to the nodes at the next depth level. Guarantees the shortest path in an unweighted grid.
+* **Depth-First Search (DFS):** Explores as far as possible along each branch before backtracking. Does *not* guarantee the shortest path.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+* Node.js installed on your local machine.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/your-username/algorithm-visualizer.git](https://github.com/your-username/algorithm-visualizer.git)
+    ```
+2.  **Navigate to the project directory**
+    ```bash
+    cd algorithm-visualizer
+    ```
+3.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+4.  **Install React Router** (if not already added)
+    ```bash
+    npm install react-router-dom
+    ```
+5.  **Start the application**
+    ```bash
+    npm start
+    ```
+    Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage Guide
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Sorting Visualizer
+1.  Click **"Generate New Array"** to create random data.
+2.  Use the **Range Slider** to adjust the array size and sorting speed.
+3.  Click **"Set Custom Array"** to input your own comma-separated numbers (e.g., `10, 50, 25, 90`).
+4.  Select an algorithm (e.g., **Merge Sort**) to begin the animation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pathfinding Visualizer
+1.  **Drag & Drop:** Click and hold the **Green Node** (Start) or **Red Node** (Finish) to move them.
+2.  **Draw Walls:** Click and drag on empty white cells to create walls/obstacles.
+3.  **Select Algorithm:** Choose between **Dijkstra**, **BFS**, or **DFS**.
+4.  Click **Visualize!** to watch the algorithm find the path.
+5.  Click **Clear Board** to reset the grid.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+* **React.js:** Frontend library for building the user interface.
+* **React Router:** For handling navigation between pages.
+* **CSS3:** For custom animations and styling.
+* **Javascript (ES6+):** For algorithm logic and DOM manipulation.
