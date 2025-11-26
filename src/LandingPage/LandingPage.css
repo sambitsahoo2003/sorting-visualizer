@@ -1,0 +1,87 @@
+/* Main Page Layout */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(#eee, #333);
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    margin-bottom: 50px;
+}
+
+/* Card Container */
+.options-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Cards */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card h2 {
+    margin-top: 20px;
+    color: #4db8ff;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* --- Icons (Pure CSS Art) --- */
+.icon-box {
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+/* Sorting Icon Bars */
+.bar { width: 10px; background-color: turquoise; }
+.b1 { height: 40px; }
+.b2 { height: 80px; background-color: red; }
+.b3 { height: 60px; }
+.b4 { height: 30px; }
+
+/* Pathfinding Icon Nodes */
+.path-icon { align-items: center; gap: 10px; }
+.node-icon { width: 20px; height: 20px; border-radius: 50%; }
+.start { background-color: green; }
+.path { width: 40px; height: 5px; background-color: yellow; border-radius: 0; }
+.end { background-color: red; }

@@ -1,0 +1,33 @@
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: white;
+  background-color: #619ffc; /* Bootstrap primary blue */
+}
+
+.btn:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-selected {
+  background-color: #ffca2c; /* Yellow/Gold for selected state */
+  color: black;
+}
+
+/* --- GRID STYLES --- */
+.grid-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.grid-row {
+  display: flex;
+}

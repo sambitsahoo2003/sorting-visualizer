@@ -1,0 +1,43 @@
+body{
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    text-align: center;
+}
+
+.tool-bar {
+  background-color: rgb(59, 59, 255);
+  position: sticky;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn {
+  margin-left:2%;
+  margin-right: 2%;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  color: white;
+  background-color: #619ffc; /* Bootstrap primary blue */
+}
+
+.btn:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-selected {
+  background-color: #ffca2c; /* Yellow/Gold for selected state */
+  color: black;
+}
+
+#customRange3{
+    width:auto;
+    padding-top: 1%;
+}
