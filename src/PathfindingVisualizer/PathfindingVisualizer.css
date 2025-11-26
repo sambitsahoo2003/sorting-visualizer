@@ -6,7 +6,7 @@
   cursor: pointer;
   transition: background 0.2s;
   color: white;
-  background-color: #619ffc; /* Bootstrap primary blue */
+  background-color: #619ffc;
 }
 
 .btn:hover {
@@ -14,11 +14,10 @@
 }
 
 .btn-selected {
-  background-color: #ffca2c; /* Yellow/Gold for selected state */
+  background-color: #ffca2c;
   color: black;
 }
 
-/* --- GRID STYLES --- */
 .grid-container {
     position: relative;
     display: flex;

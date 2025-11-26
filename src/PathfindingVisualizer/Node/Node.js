@@ -23,7 +23,7 @@ export default function Node({
     <div
       id={`node-${row}-${col}`}
       className={`node ${extraClassName}`}
-      // Add the Mouse Listeners here
+      
       onMouseDown={() => onMouseDown(row, col)}
       onMouseEnter={() => onMouseEnter(row, col)}
       onMouseUp={() => onMouseUp()}>

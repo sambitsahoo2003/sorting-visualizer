@@ -11,10 +11,8 @@ export default function LandingPage() {
       <p className="subtitle">Select a domain to visualize algorithms in action</p>
       
       <div className="options-container">
-        {/* Option 1: Sorting */}
         <div className="card" onClick={() => navigate('/sorting')}>
           <div className="icon-box sorting-icon">
-            {/* Simple CSS representation of bars */}
             <div className="bar b1"></div>
             <div className="bar b2"></div>
             <div className="bar b3"></div>
@@ -24,10 +22,8 @@ export default function LandingPage() {
           <p>Visualize Bubble, Merge, Quick, and Insertion Sort on array bars.</p>
         </div>
 
-        {/* Option 2: Pathfinding */}
         <div className="card" onClick={() => navigate('/pathfinding')}>
           <div className="icon-box path-icon">
-             {/* Simple CSS representation of nodes */}
              <div className="node-icon start"></div>
              <div className="node-icon path"></div>
              <div className="node-icon end"></div>

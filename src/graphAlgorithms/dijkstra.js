@@ -1,32 +1,21 @@
-// Performs Dijkstra's Algorithm.
-// Returns all nodes in the order they were visited.
-// Also makes sure to point .previousNode for backtracking.
 export function dijkstra(grid, startNode, finishNode) {
   const visitedNodesInOrder = [];
   startNode.distance = 0;
   
-  // Get all nodes in a flat array so we can sort them
   const unvisitedNodes = getAllNodes(grid);
 
   while (!!unvisitedNodes.length) {
-    // Sort nodes by distance (Smallest distance first)
-    // This effectively acts as a Priority Queue
     sortNodesByDistance(unvisitedNodes);
     
-    // Pick the closest node
     const closestNode = unvisitedNodes.shift();
 
-    // If the closest node is a wall, we skip it
     if (closestNode.isWall) continue;
 
-    // If the closest node is at a distance of Infinity,
-    // we must be trapped and should stop.
     if (closestNode.distance === Infinity) return visitedNodesInOrder;
 
     closestNode.isVisited = true;
     visitedNodesInOrder.push(closestNode);
 
-    // If we reached the destination
     if (closestNode === finishNode) return visitedNodesInOrder;
 
     updateUnvisitedNeighbors(closestNode, grid);

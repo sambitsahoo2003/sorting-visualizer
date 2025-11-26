@@ -12,8 +12,6 @@
     position: relative;
   }
   
-
-/* The dark background behind the dialog */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -24,10 +22,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure it sits on top of array bars */
+  z-index: 1000;
 }
 
-/* The actual white box */
+
 .modal-content {
   background: white;
   padding: 20px;

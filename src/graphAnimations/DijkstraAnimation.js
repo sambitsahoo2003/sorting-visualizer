@@ -11,7 +11,6 @@ export default function DijkstraAnimation(visitedNodesInOrder, nodesInShortestPa
             const node = visitedNodesInOrder[i];
             const isStartOrFinish = node.isStart || node.isFinish;
             
-            // Only color if it's not the Start or Finish node
             if(!isStartOrFinish) {
                 document.getElementById(`node-${node.row}-${node.col}`).className =
                 'node node-visited';
